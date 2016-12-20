@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<edges>
+	<edge from="1" id="1to3" to="3" />
+	<edge from="2" id="2to3" to="3" />
+	<edge from="4" id="4to5" to="5" />
+</edges>

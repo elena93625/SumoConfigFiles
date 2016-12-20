@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- debug config -->
+<launch>
+	<copy file="mrange.net.xml" />
+	<copy file="mrange.rou.xml" />
+	<copy file="mrange.sumo.cfg" type="config" />
+</launch>

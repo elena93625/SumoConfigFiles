@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 12/07/16 16:33:57 by SUMO netconvert Version 0.28.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="mrange.nod.xml"/>
+        <edge-files value="mrange.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="mrange.net.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="200.00,0.00" convBoundary="0.00,0.00,700.00,1.00" origBoundary="-200.00,0.00,500.00,1.00" projParameter="!"/>
+
+    <edge id="1to3" from="1" to="3" priority="-1">
+        <lane id="1to3_0" index="0" speed="13.90" length="700.00" shape="0.00,-1.65 700.00,-1.65"/>
+    </edge>
+    <edge id="2to3" from="2" to="3" priority="-1">
+        <lane id="2to3_0" index="0" speed="13.90" length="260.00" shape="440.00,-1.65 700.00,-1.65"/>
+    </edge>
+    <edge id="4to5" from="4" to="5" priority="-1">
+        <lane id="4to5_0" index="0" speed="13.90" length="700.00" shape="0.00,-0.65 700.00,-0.65"/>
+    </edge>
+
+    <junction id="1" type="unregulated" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,-0.05 0.00,-3.25"/>
+    <junction id="2" type="unregulated" x="440.00" y="0.00" incLanes="" intLanes="" shape="440.00,-0.05 440.00,-3.25"/>
+    <junction id="3" type="unregulated" x="700.00" y="0.00" incLanes="1to3_0 2to3_0" intLanes="" shape="700.00,-3.25 700.00,-0.05 700.00,-3.25 700.00,-0.05"/>
+    <junction id="4" type="unregulated" x="0.00" y="1.00" incLanes="" intLanes="" shape="0.00,0.95 0.00,-2.25"/>
+    <junction id="5" type="unregulated" x="700.00" y="1.00" incLanes="4to5_0" intLanes="" shape="700.00,-2.25 700.00,0.95"/>
+
+</net>

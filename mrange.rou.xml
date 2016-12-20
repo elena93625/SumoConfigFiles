@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<routes>
+	<vType accel="0.0" decel="0.0" id="OriginalCar" lenghth="2.0" maxSpeed="0.0" sigma="0.0" />
+	<vType accel="0.0" decel="0.0" id="FixedCar" lenghth="2.0" maxSpeed="0.10" sigma="0.0" />
+		<!-- sigma is the parameter of random behaviors, sigma=0 means deterministic -->
+	<route id="route0" edges="1to3" />
+	<route id="route1" edges="2to3" />
+	<vehicle depart="1" id="veh0" route="route1" type="FixedCar" />
+	<vehicle depart="1" id="veh1" route="route0" type="OriginalCar" />
+</routes>
